@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienes Raíces</title>
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+<body>
+    
+    <header class="header">
+        <div class="contenedor contenido-header">
+            <div class="barra">
+                <a href="index.html" class="logo_principal">
+                </a>
+
+                <div class="mobile-menu">
+                    <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="moon" class="svg-inline--fa fa-moon fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M279.135 512c78.756 0 150.982-35.804 198.844-94.775 28.27-34.831-2.558-85.722-46.249-77.401-82.348 15.683-158.272-47.268-158.272-130.792 0-48.424 26.06-92.292 67.434-115.836 38.745-22.05 28.999-80.788-15.022-88.919A257.936 257.936 0 0 0 279.135 0c-141.36 0-256 114.575-256 256 0 141.36 114.576 256 256 256zm0-464c12.985 0 25.689 1.201 38.016 3.478-54.76 31.163-91.693 90.042-91.693 157.554 0 113.848 103.641 199.2 215.252 177.944C402.574 433.964 344.366 464 279.135 464c-114.875 0-208-93.125-208-208s93.125-208 208-208z"></path></svg>
+                </div>
+
+                <div class="derecha">
+                    <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="moon" class="dark-mode-boton" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#f3f3f3f3" d="M279.135 512c78.756 0 150.982-35.804 198.844-94.775 28.27-34.831-2.558-85.722-46.249-77.401-82.348 15.683-158.272-47.268-158.272-130.792 0-48.424 26.06-92.292 67.434-115.836 38.745-22.05 28.999-80.788-15.022-88.919A257.936 257.936 0 0 0 279.135 0c-141.36 0-256 114.575-256 256 0 141.36 114.576 256 256 256zm0-464c12.985 0 25.689 1.201 38.016 3.478-54.76 31.163-91.693 90.042-91.693 157.554 0 113.848 103.641 199.2 215.252 177.944C402.574 433.964 344.366 464 279.135 464c-114.875 0-208-93.125-208-208s93.125-208 208-208z"></path></svg>
+                    
+                    <nav class="navegacion">
+                        <a href="index.html">Inicio</a>
+                        <a href="nosotros.html">Nosotros</a>
+                        <a href="anuncios.html">Anuncios</a>
+                        <a href="blog.html">Blog</a>
+                        <a href="contacto.html">Contacto</a>
+                    </nav>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <main class="contenedor seccion">
+        <h1>Contacto</h1>
+
+        <picture>
+            <source srcset="build/img/destacada3.avif" type="image/avif">
+            <source srcset="build/img/destacada3.webp" type="image/webp">
+            <source srcset="build/img/destacada3.jpg" type="image/jpeg">
+            <img src="build/img/destacada3.jpg" alt="Imagen contacto" loading="lazy">
+        </picture>
+
+        <h2>Completé el formulario de contacto</h2>
+        <form class="formulario">
+            <fieldset>
+                <legend>Información personal</legend>
+                <div>
+                    <label for="nombre" >Nombre: </label>
+                    <input type="text" id="nombre" placeholder="Tu nombre">
+                </div>
+                <div>
+                    <label for="correo" >Correo Electrónico: </label>
+                    <input type="email" id="correo" placeholder="Tu correo">
+                </div>
+                <div>
+                    <label for="numero_telefono" >Número telefónico: </label>
+                    <input type="number" id="numero_telefono" placeholder="Número de teléfono">
+                </div>
+                <div>
+                    <label for="mensaje" >Mensaje: </label>
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="5" placeholder="Escribe aquí tu mensaje"></textarea>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Información sobre la propiedad</legend>
+                <div>
+                    <label for="opciones">Vende o compra: </label>
+                    <select name="opciones" id="opciones">
+                        <option value="" selected disabled >-- Seleccione --</option>
+                        <option value="compra">Compra</option>
+                        <option value="vende">Vende</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="precio_presupuesto" >Precio o Presupuesto: </label>
+                    <input type="number" id="precio_presupuesto" placeholder="Precio/Presupuesto">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Contacto</legend>
+                <div class="forma-contacto">
+                    <p>¿Cómo desea ser contactado?</p>
+                    <div class="opciones-contacto">
+                        <div>
+                            <label for="contactar-telefono">Teléfono</label>
+                            <input type="radio" name="contacto" value="telefono" id="contactar-telefono">
+                        </div>
+                        <div>
+                            <label for="contactar-email">Correo</label>
+                            <input type="radio" name="contacto" value="correo" id="contactar-email">
+                        </div>
+                    </div>                    
+                    <p>Si eligió teléfono, elija la fecha y hora para ser contactado</p>
+                    <div>
+                        <label for="fecha">Fecha</label>
+                        <input type="date" id="fecha">
+                    </div>
+                    <div>
+                        <label for="hora">Hora</label>
+                        <input type="time" id="hora" min="09:00" max="20:00">
+                    </div>
+                </div>
+            </fieldset>
+            <input type="submit" value="Enviar" class="boton-verde">
+        </form>
+    </main>
+
+    <footer class="footer seccion">
+        <div class="contenedor contenedor-footer">
+            <nav class="navegacion">
+                <a href="index.html">Inicio</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="anuncios.html">Anuncios</a>
+                <a href="blog.html">Blog</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+        </div>
+
+        <p class="copyright">Todos los Derechos Reservados 2024 &copy;</p>
+    </footer>
+
+    <script src="build/js/bundle.min.js"></script>
+</body>
+</html>
